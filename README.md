@@ -169,7 +169,7 @@ Things I work on that aren't public.
 <tr>
 <td width="33%" align="center">
 <img src="https://img.shields.io/badge/-EDR%20Evasion-cc0000?style=for-the-badge&logoColor=white" /><br><br>
-Implant dev in C/C++ and C#/.NET. Syscall unhooking, ETW patching, AMSI bypass, process injection, reflective loading. Tested against production EDR.
+Implant dev in C/C++ and C#/.NET. DLL sideloading, signed binary abuse, BoF development, UDRL custom loader, payload staging. Tested against production EDR.
 </td>
 <td width="33%" align="center">
 <img src="https://img.shields.io/badge/-AD%20/%20Azure%20AD-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" /><br><br>
