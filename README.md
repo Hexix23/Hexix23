@@ -80,7 +80,7 @@ Modules on phishing, auth attacks, and cloud identity exploitation. Protocol int
 
 <table>
 <tr>
-<td width="50%">
+<td width="33%">
 
 <p align="center"><b><a href="https://github.com/Maldev-Academy/GitHubDeviceCodePhishing">GitHubDeviceCodePhishing</a></b></p>
 <p align="center"><img src="https://img.shields.io/github/stars/Maldev-Academy/GitHubDeviceCodePhishing?style=flat-square&color=ff0000&labelColor=0d1117" /> <img src="https://img.shields.io/github/forks/Maldev-Academy/GitHubDeviceCodePhishing?style=flat-square&color=444444&labelColor=0d1117" /></p>
@@ -88,12 +88,20 @@ Modules on phishing, auth attacks, and cloud identity exploitation. Protocol int
 GitHub device code phishing. Minimal setup.
 
 </td>
-<td width="50%">
+<td width="33%">
 
 <p align="center"><b><a href="https://github.com/Maldev-Academy/GitLabDeviceCodePhishing">GitLabDeviceCodePhishing</a></b></p>
 <p align="center"><img src="https://img.shields.io/github/stars/Maldev-Academy/GitLabDeviceCodePhishing?style=flat-square&color=ff0000&labelColor=0d1117" /> <img src="https://img.shields.io/github/forks/Maldev-Academy/GitLabDeviceCodePhishing?style=flat-square&color=444444&labelColor=0d1117" /></p>
 
 Same approach for GitLab. Cloud and self-managed.
+
+</td>
+<td width="33%">
+
+<p align="center"><b><a href="https://github.com/Hexix23/shodan-mcp">shodan-mcp</a></b></p>
+<p align="center"><img src="https://img.shields.io/github/stars/Hexix23/shodan-mcp?style=flat-square&color=ff0000&labelColor=0d1117" /> <img src="https://img.shields.io/github/forks/Hexix23/shodan-mcp?style=flat-square&color=444444&labelColor=0d1117" /></p>
+
+Shodan MCP server. Query Shodan from AI assistants.
 
 </td>
 </tr>
@@ -184,6 +192,7 @@ Training specialist models for offensive security. RL pipeline with feedback fro
 <p align="center">
   <img src="https://skillicons.dev/icons?i=docker,azure,cloudflare,nginx,linux,github&theme=dark&perline=6" alt="Infra" />
 </p>
+
 
 ---
 
