@@ -22,7 +22,7 @@
 
 ---
 
-Red team operator and offensive tool developer. Most of my work lives under [@Maldev-Academy](https://github.com/Maldev-Academy) and private repos. I write about what I can share at [cgomezsec.com](https://cgomezsec.com/).
+Red team operator and offensive tool developer. Most of my work lives under [@Maldev-Academy](https://github.com/Maldev-Academy) and in private repositories for my current employer (IOActive). I write about what I can share at [cgomezsec.com](https://cgomezsec.com/).
 
 Author of [Authentication Downgrade Attacks: Deep Dive Into MFA Bypass](https://www.ioactive.com/authentication-downgrade-attacks-deep-dive-into-mfa-bypass/).
 
