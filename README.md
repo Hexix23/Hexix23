@@ -55,18 +55,9 @@ Modules on phishing, auth attacks, and cloud identity exploitation. Protocol int
 | 09 | Client Analysis Via Cloudflare Workers | — | Anti-bot, anti-analysis, client fingerprinting |
 | 10 | Dynamic Device Code Phishing | Microsoft | Flask app for runtime device code generation |
 | 11 | MFA Bypass Via Azure AiTM | Azure AD | AiTM via Azure Functions + Azure Front Door |
-
-</td>
-</tr>
-<tr>
-<td>
-
-**In Development**
-
-| # | Module | Target | Technique |
-|---|--------|--------|-----------|
-| 12 | Google AiTM | Google | Real-time credential relay via nodriver + CDP |
-| 13 | Phishing Passkeys | FIDO2/WebAuthn | Passkey theft, CDP virtual authenticators |
+| 12 | Google Phishing: BotGuard, Browser Automation, Chrome Sync | Google | BotGuard internals + custom bypass tool to defeat Google MFA |
+| 13 | Phishing Passkeys | FIDO2/WebAuthn | Synced passkeys + hardware security keys, custom Passkey Phisher |
+| 14 | ConsentFix Attack | M365 / OAuth | ConsentFix attack chain with custom tooling for engagements |
 
 </td>
 </tr>
@@ -107,53 +98,86 @@ Shodan MCP server. Query Shodan from AI assistants.
 </tr>
 </table>
 
-#### Internal (Maldev Academy)
+#### Internal Tooling — Maldev Academy
+
+<p align="center">
+  <a href="https://github.com/Maldev-Academy"><img src="https://img.shields.io/badge/-Maldev%20Academy-cc0000?style=for-the-badge&logo=hackthebox&logoColor=white" /></a>
+  <img src="https://img.shields.io/badge/-Members%20Only-0d1117?style=for-the-badge&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/-Private-444444?style=for-the-badge" />
+</p>
+
+<p align="center"><i>Private frameworks shipped alongside the corresponding research modules.</i></p>
 
 <table>
 <tr>
-<td width="50%">
+<td width="50%" valign="top">
 
-**Real-time Phishing Framework**
+<p align="center"><b>Real-time Phishing Framework</b></p>
+<p align="center"><img src="https://img.shields.io/badge/-AiTM-cc0000?style=flat-square" /> <img src="https://img.shields.io/badge/-CDP-4285F4?style=flat-square&logo=googlechrome&logoColor=white" /> <img src="https://img.shields.io/badge/-Multi--provider-444444?style=flat-square" /></p>
 
-Multi-provider credential relay with live error feedback. Real Chrome per target via nodriver/CDP.
-
-```
-Victim <-> Flask <-> Chrome/CDP <-> Real Site
-                         |
-              Sync / Passkeys / Vault
-```
-
-Google, GitHub, Bitwarden built in.
+Multi-provider credential relay with live error feedback. Real Chrome per target via nodriver/CDP. Google, GitHub, Bitwarden built in.
 
 </td>
-<td width="50%">
+<td width="50%" valign="top">
 
-**Cloudflare Workers AiTM Proxy**
+<p align="center"><b>Cloudflare Workers AiTM Proxy</b></p>
+<p align="center"><img src="https://img.shields.io/badge/-AiTM-cc0000?style=flat-square" /> <img src="https://img.shields.io/badge/-Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white" /> <img src="https://img.shields.io/badge/-Serverless-444444?style=flat-square" /></p>
 
 Invisible reverse proxy on CF Workers. Rewrites requests/responses on the edge, captures credentials and session tokens. No servers.
 
 </td>
 </tr>
 <tr>
-<td width="50%">
+<td width="50%" valign="top">
 
-**Azure AiTM Proxy**
+<p align="center"><b>Azure AiTM Proxy</b></p>
+<p align="center"><img src="https://img.shields.io/badge/-AiTM-cc0000?style=flat-square" /> <img src="https://img.shields.io/badge/-Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" /> <img src="https://img.shields.io/badge/-Front%20Door-444444?style=flat-square" /></p>
 
 AiTM proxy on Azure Functions + Front Door. Legitimate Microsoft infrastructure proxying auth flows.
 
 </td>
-<td width="50%">
+<td width="50%" valign="top">
 
-**Evilginx M365 Phishlet**
+<p align="center"><b>Evilginx M365 Phishlet</b></p>
+<p align="center"><img src="https://img.shields.io/badge/-Phishlet-cc0000?style=flat-square" /> <img src="https://img.shields.io/badge/-M365-0078D4?style=flat-square&logo=microsoft&logoColor=white" /> <img src="https://img.shields.io/badge/-MFA%20Downgrade-444444?style=flat-square" /></p>
 
 Custom phishlet with MFA downgrade. Forces FIDO-capable accounts to weaker auth methods.
 
 </td>
 </tr>
 <tr>
-<td colspan="2">
+<td width="50%" valign="top">
 
-**Client Fingerprinting Worker** - CF Worker that profiles clients before serving content. Anti-bot, sandbox detection, browser fingerprinting, geo filtering.
+<p align="center"><b>Google MFA Bypass Framework</b></p>
+<p align="center"><img src="https://img.shields.io/badge/-Module%2012-cc0000?style=flat-square" /> <img src="https://img.shields.io/badge/-Google-4285F4?style=flat-square&logo=google&logoColor=white" /> <img src="https://img.shields.io/badge/-BotGuard-444444?style=flat-square" /></p>
+
+BotGuard internals reversing + custom bypass. Real Chrome via nodriver/CDP, Chrome Sync abuse for credential and session theft. Defeats Google MFA end-to-end.
+
+</td>
+<td width="50%" valign="top">
+
+<p align="center"><b>Passkey Phisher</b></p>
+<p align="center"><img src="https://img.shields.io/badge/-Module%2013-cc0000?style=flat-square" /> <img src="https://img.shields.io/badge/-FIDO2-0d1117?style=flat-square&logo=fidoalliance&logoColor=white" /> <img src="https://img.shields.io/badge/-WebAuthn-444444?style=flat-square" /></p>
+
+Targets synced passkeys and hardware security keys. CDP virtual authenticators, downgrade paths, session capture.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<p align="center"><b>ConsentFix Tool</b></p>
+<p align="center"><img src="https://img.shields.io/badge/-Module%2014-cc0000?style=flat-square" /> <img src="https://img.shields.io/badge/-OAuth-EB5424?style=flat-square&logo=oauth&logoColor=white" /> <img src="https://img.shields.io/badge/-M365-0078D4?style=flat-square&logo=microsoft&logoColor=white" /></p>
+
+End-to-end ConsentFix attack chain packaged for engagements. OAuth consent abuse with the ConsentFix lure flow.
+
+</td>
+<td width="50%" valign="top">
+
+<p align="center"><b>Client Fingerprinting Worker</b></p>
+<p align="center"><img src="https://img.shields.io/badge/-Anti--bot-cc0000?style=flat-square" /> <img src="https://img.shields.io/badge/-Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white" /> <img src="https://img.shields.io/badge/-Recon-444444?style=flat-square" /></p>
+
+CF Worker that profiles clients before serving content. Anti-bot, sandbox detection, browser fingerprinting, geo filtering.
 
 </td>
 </tr>
