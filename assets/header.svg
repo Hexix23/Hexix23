@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">Carlos Gómez Quintana · 0xh3l1x</title>
+  <desc id="desc">A red and graphite profile header with a geometric hexagon mark.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop stop-color="#111820"/>
+      <stop offset="1" stop-color="#090d12"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop stop-color="#ef4444" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#ef4444" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="edge">
+      <stop stop-color="#ef4444"/>
+      <stop offset=".55" stop-color="#ef4444" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#ef4444" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#64748b" stroke-opacity=".08"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="300" rx="16" fill="url(#background)"/>
+  <rect width="1200" height="300" rx="16" fill="url(#grid)"/>
+  <ellipse cx="990" cy="150" rx="260" ry="230" fill="url(#glow)"/>
+  <path d="M20 1H1180" stroke="url(#edge)" stroke-width="2"/>
+  <path d="M56 64H91" stroke="#ef4444" stroke-width="3"/>
+  <g font-family="ui-monospace, SFMono-Regular, Consolas, Liberation Mono, monospace">
+    <text x="108" y="69" fill="#a4afbd" font-size="15" letter-spacing="2.5">CARLOS GÓMEZ QUINTANA</text>
+    <text x="51" y="177" fill="#f0f4f8" font-size="88" font-weight="700" letter-spacing="-5">0x<tspan fill="#ef4444">h3l1x</tspan></text>
+    <path d="M57 213H680" stroke="#28313e"/>
+    <text x="57" y="245" fill="#a4afbd" font-size="14" letter-spacing="1.1">RED TEAM / SECURITY RESEARCH / OFFENSIVE DEVELOPMENT</text>
+  </g>
+  <g fill="none" stroke-linejoin="round">
+    <path d="M945 35 1045 93V207L945 265 845 207V93Z" stroke="#ef4444" stroke-opacity=".18"/>
+    <path d="M945 59 1024 105V195L945 241 866 195V105Z" stroke="#ef4444" stroke-width="2"/>
+    <path d="M945 82 1004 116V184L945 218 886 184V116Z" stroke="#ef4444" stroke-opacity=".35"/>
+    <path d="M916 116 894 150 916 184M974 116 996 150 974 184" stroke="#f0f4f8" stroke-width="5"/>
+    <path d="M959 110 931 190" stroke="#ef4444" stroke-width="5"/>
+    <path d="M1045 93H1110L1140 63M845 207H785L759 233" stroke="#ef4444" stroke-opacity=".35"/>
+    <circle cx="1140" cy="63" r="4" fill="#ef4444" stroke="none"/>
+    <circle cx="759" cy="233" r="4" fill="#ef4444" stroke="none"/>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="299" rx="15.5" fill="none" stroke="#303846"/>
+</svg>

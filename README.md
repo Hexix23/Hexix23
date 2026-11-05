@@ -1,22 +1,35 @@
 <h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=FF0000&center=true&vCenter=true&width=435&lines=0xh3l1x;Red+Team+Leader;Offensive+Security+R%26D" alt="0xh3l1x | Red Team Leader | Offensive Security R&amp;D" />
+  <img src="assets/header.svg" width="100%" alt="Carlos Gómez Quintana · 0xh3l1x · Red Team, Security Research and Offensive Development" />
 </h1>
 
-<p align="center">
-  <strong>Senior Security Consultant &amp; Red Team Leader</strong><br>
-  Global Threat Group (GTG) · IOActive
-</p>
-
-<p align="center">
-  <strong>Security Researcher &amp; Developer</strong><br>
-  Maldev Academy
-</p>
+<table align="center">
+<tr>
+<td width="50%" align="center" valign="top">
+<p><a href="https://www.ioactive.com/"><img src="assets/ioactive.svg" width="146" height="64" alt="IOActive" /></a></p>
+<p><strong>IOActive</strong><br>Global Threat Group (GTG)</p>
+<p>Senior Security Consultant<br><strong>Red Team Leader</strong></p>
+</td>
+<td width="50%" align="center" valign="top">
+<p><a href="https://github.com/Maldev-Academy"><img src="assets/maldev-academy.png" width="64" height="64" alt="Maldev Academy" /></a></p>
+<p><strong>Maldev Academy</strong></p>
+<p><strong>Security Researcher &amp; Developer</strong></p>
+</td>
+</tr>
+</table>
 
 <p align="center">
   <a href="https://cgomezsec.com/"><img src="https://img.shields.io/badge/-cgomezsec.com-FF5722?style=for-the-badge&logo=firefox&logoColor=white" alt="Blog"></a>
   <a href="https://www.ioactive.com/"><img src="https://img.shields.io/badge/-Red%20Team%20Leader%20%C2%B7%20GTG%20%C2%B7%20IOActive-cc0000?style=for-the-badge" alt="Red Team Leader · GTG · IOActive"></a>
   <a href="https://github.com/Maldev-Academy"><img src="https://img.shields.io/badge/-Security%20Researcher%20%26%20Developer%20%C2%B7%20Maldev%20Academy-cc0000?style=for-the-badge&logo=hackthebox&logoColor=white" alt="Security Researcher &amp; Developer · Maldev Academy"></a>
   <a href="#publications-and-talks"><img src="https://img.shields.io/badge/-Published%20Research-4B275F?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="Publications and talks"></a>
+</p>
+
+<p align="center">
+  <a href="#internal-red-team-work">Internal Work</a> ·
+  <a href="#vulnerability-research">CVEs</a> ·
+  <a href="#publications-and-talks">Publications &amp; Talks</a> ·
+  <a href="#maldev-academy">Maldev Academy</a> ·
+  <a href="#tools">Tools</a>
 </p>
 
 <p align="center">
@@ -35,9 +48,52 @@
 
 I'm Carlos Gómez Quintana, aka `0xh3l1x`, Senior Security Consultant and Red Team Leader within IOActive's Global Threat Group (GTG). I'm also a Security Researcher and Developer at [Maldev Academy](https://github.com/Maldev-Academy). I write about what I can share at [cgomezsec.com](https://cgomezsec.com/).
 
-### IOActive / Global Threat Group
+### Internal Red Team Work
 
-I lead the team's technical work and develop the tools we use on engagements. I also work on the team's structure and technical workflows.
+<table>
+<tr>
+<td width="50%" valign="top">
+<p align="center"><img src="https://img.shields.io/badge/-Operations%20%26%20Tooling-ef4444?style=for-the-badge&labelColor=0d1117" alt="Operations and tooling" /></p>
+
+I lead technical development and build the tools we use on engagements. I also help define the team's structure and technical workflows.
+
+</td>
+<td width="50%" valign="top">
+<p align="center"><img src="https://img.shields.io/badge/-Identity%20%26%20Cloud-0078D4?style=for-the-badge&labelColor=0d1117" alt="Identity and cloud" /></p>
+
+Active Directory and Microsoft Entra ID attack paths, privilege escalation, and lateral movement. OAuth device-code and consent flows, token manipulation, conditional access, and cross-tenant scenarios.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<p align="center"><img src="https://img.shields.io/badge/-Browser%20Operations-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0d1117" alt="Browser operations" /></p>
+
+CDP-driven AiTM, BotGuard behavior, Chrome Sync, and session handling. FIDO2/WebAuthn research focuses on downgrade paths in real implementations.
+
+</td>
+<td width="50%" valign="top">
+<p align="center"><img src="https://img.shields.io/badge/-Infrastructure%20%26%20OPSEC-F38020?style=for-the-badge&logo=cloudflare&logoColor=white&labelColor=0d1117" alt="Infrastructure and OPSEC" /></p>
+
+Cloudflare Workers and Azure Functions / Front Door for engagement infrastructure. Request and response rewriting, client profiling, anti-bot checks, and sandbox detection.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<p align="center"><img src="https://img.shields.io/badge/-Offensive%20Development-ef4444?style=for-the-badge&labelColor=0d1117" alt="Offensive development" /></p>
+
+Implants in C/C++ and C#/.NET, BOFs, custom UDRLs, payload staging, DLL sideloading, and signed binary abuse. Tested against production EDR products.
+
+</td>
+<td width="50%" valign="top">
+<p align="center"><img src="https://img.shields.io/badge/-AI--Assisted%20Research-7C3AED?style=for-the-badge&labelColor=0d1117" alt="AI-assisted research" /></p>
+
+LLM-assisted code review, runtime checks, and patch validation. For <code>APT-992</code>, I'm training specialist models for offensive security with RL feedback from live security products.
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -57,17 +113,55 @@ I use LLMs to review code, then test suspected bugs against real builds. My [IOA
 
 #### Publications
 
-| Year | Research | Publisher |
-|---|---|---|
-| 2026 | [LLM-Assisted Vulnerability Research: Finding Real Bugs with Code-Reasoning Models](https://www.ioactive.com/llm-assisted-vulnerability-research-finding-real-bugs-with-code-reasoning-models/) | IOActive |
-| 2026 | [Authentication Downgrade Attacks: Deep Dive into MFA Bypass](https://www.ioactive.com/authentication-downgrade-attacks-deep-dive-into-mfa-bypass/) | IOActive |
+<table>
+<tr>
+<td width="50%" valign="top">
+<p><img src="https://img.shields.io/badge/IOActive-2026-ef4444?style=flat-square&labelColor=0d1117" alt="IOActive · 2026" /></p>
+
+**[LLM-Assisted Vulnerability Research: Finding Real Bugs with Code-Reasoning Models](https://www.ioactive.com/llm-assisted-vulnerability-research-finding-real-bugs-with-code-reasoning-models/)**
+
+A workflow for turning code-review candidates into confirmed bugs, with runtime tests and patch comparisons.
+
+</td>
+<td width="50%" valign="top">
+<p><img src="https://img.shields.io/badge/IOActive-2026-ef4444?style=flat-square&labelColor=0d1117" alt="IOActive · 2026" /></p>
+
+**[Authentication Downgrade Attacks: Deep Dive into MFA Bypass](https://www.ioactive.com/authentication-downgrade-attacks-deep-dive-into-mfa-bypass/)**
+
+How weaker fallback methods let authentication flows be downgraded, even when FIDO2/WebAuthn is available.
+
+</td>
+</tr>
+</table>
 
 #### Talks
 
-| Year | Talk | Event |
-|---|---|---|
-| 2025 | [Cloud Edge Phishing: Breaking the Future of Auth](https://www.ioactive.com/event/out-of-the-box-carlos-gomez-quintana-cloud-edge-phishing-bangkok-thailand/) | Out of the Box, Bangkok |
-| 2023 | [Upgrading Rollback-Agnostic Replay Attacks](https://conference.hitb.org/hitbsecconf2023ams/materials/D1%20COMMSEC%20-%20Upgrading%20Rollback%20Agnostic%20Replay%20Attacks%20-%20Carlos%20Gomez.pdf) | Hack In The Box, Amsterdam |
+<table>
+<tr>
+<td width="50%" valign="top">
+<p><img src="https://img.shields.io/badge/-Authentication%20Research-4285F4?style=flat-square&labelColor=0d1117" alt="Authentication research" /></p>
+
+**Cloud Edge Phishing: Breaking the Future of Auth**
+
+Out of the Box · Bangkok · 2025
+
+Cloudflare Workers and Azure infrastructure for AiTM operations.
+
+[Abstract](https://www.ioactive.com/event/out-of-the-box-carlos-gomez-quintana-cloud-edge-phishing-bangkok-thailand/)
+
+</td>
+<td width="50%" valign="top">
+<p><img src="https://img.shields.io/badge/-Automotive%20%26%20RF-ef4444?style=flat-square&labelColor=0d1117" alt="Automotive and RF research" /></p>
+
+**Upgrading Rollback-Agnostic Replay Attacks**
+
+<p>Hack In The Box · Amsterdam · 2023<br>HACK::SOHO · 2023<br>ESCAR USA · Detroit</p>
+
+[Slides](https://conference.hitb.org/hitbsecconf2023ams/materials/D1%20COMMSEC%20-%20Upgrading%20Rollback%20Agnostic%20Replay%20Attacks%20-%20Carlos%20Gomez.pdf)
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -114,7 +208,7 @@ I write modules and build companion tooling for [Maldev Academy](https://github.
 
 <table>
 <tr>
-<td width="33%">
+<td width="33%" valign="top">
 
 <p align="center"><b><a href="https://github.com/Maldev-Academy/GitHubDeviceCodePhishing">GitHubDeviceCodePhishing</a></b></p>
 <p align="center"><img src="https://img.shields.io/github/stars/Maldev-Academy/GitHubDeviceCodePhishing?style=flat-square&color=ff0000&labelColor=0d1117" alt="GitHubDeviceCodePhishing stars" /> <img src="https://img.shields.io/github/forks/Maldev-Academy/GitHubDeviceCodePhishing?style=flat-square&color=444444&labelColor=0d1117" alt="GitHubDeviceCodePhishing forks" /></p>
@@ -122,7 +216,7 @@ I write modules and build companion tooling for [Maldev Academy](https://github.
 GitHub OAuth device code phishing. Minimal setup.
 
 </td>
-<td width="33%">
+<td width="33%" valign="top">
 
 <p align="center"><b><a href="https://github.com/Maldev-Academy/GitLabDeviceCodePhishing">GitLabDeviceCodePhishing</a></b></p>
 <p align="center"><img src="https://img.shields.io/github/stars/Maldev-Academy/GitLabDeviceCodePhishing?style=flat-square&color=ff0000&labelColor=0d1117" alt="GitLabDeviceCodePhishing stars" /> <img src="https://img.shields.io/github/forks/Maldev-Academy/GitLabDeviceCodePhishing?style=flat-square&color=444444&labelColor=0d1117" alt="GitLabDeviceCodePhishing forks" /></p>
@@ -130,7 +224,7 @@ GitHub OAuth device code phishing. Minimal setup.
 Device code phishing for GitLab cloud and self-managed instances.
 
 </td>
-<td width="33%">
+<td width="33%" valign="top">
 
 <p align="center"><b><a href="https://github.com/Hexix23/shodan-mcp">shodan-mcp</a></b></p>
 <p align="center"><img src="https://img.shields.io/github/stars/Hexix23/shodan-mcp?style=flat-square&color=ff0000&labelColor=0d1117" alt="shodan-mcp stars" /> <img src="https://img.shields.io/github/forks/Hexix23/shodan-mcp?style=flat-square&color=444444&labelColor=0d1117" alt="shodan-mcp forks" /></p>
@@ -221,30 +315,6 @@ OAuth consent abuse with the ConsentFix lure flow, packaged for engagements.
 <p align="center"><img src="https://img.shields.io/badge/-Anti--bot-cc0000?style=flat-square" alt="Anti-bot" /> <img src="https://img.shields.io/badge/-Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white" alt="Cloudflare" /> <img src="https://img.shields.io/badge/-Recon-444444?style=flat-square" alt="Recon" /></p>
 
 Client profiling on Cloudflare Workers: anti-bot checks, sandbox detection, browser fingerprinting, and geo filtering.
-
-</td>
-</tr>
-</table>
-
----
-
-### Internal R&D
-
-Things I work on that aren't public.
-
-<table>
-<tr>
-<td width="33%" align="center">
-<img src="https://img.shields.io/badge/-EDR%20Evasion-cc0000?style=for-the-badge&logoColor=white" alt="EDR Evasion" /><br><br>
-Implants in C/C++ and C#/.NET, DLL sideloading, signed binary abuse, BOFs, custom UDRLs, payload staging, and testing against production EDR products.
-</td>
-<td width="33%" align="center">
-<img src="https://img.shields.io/badge/-AD%20/%20Azure%20AD-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="AD / Azure AD" /><br><br>
-Active Directory and Microsoft Entra ID attack paths, privilege escalation, lateral movement, token manipulation, conditional access bypasses, and cross-tenant scenarios.
-</td>
-<td width="33%" align="center">
-<img src="https://img.shields.io/badge/-APT--992-4B275F?style=for-the-badge&logoColor=white" alt="APT-992" /><br><br>
-For <code>APT-992</code>, I'm training specialist models for offensive security. The RL pipeline uses feedback from live security products.
 
 </td>
 </tr>
