@@ -8,9 +8,14 @@
 </p>
 
 <p align="center">
+  <strong>Security Researcher &amp; Developer</strong><br>
+  Maldev Academy
+</p>
+
+<p align="center">
   <a href="https://cgomezsec.com/"><img src="https://img.shields.io/badge/-cgomezsec.com-FF5722?style=for-the-badge&logo=firefox&logoColor=white" alt="Blog"></a>
   <a href="https://www.ioactive.com/"><img src="https://img.shields.io/badge/-Red%20Team%20Leader%20%C2%B7%20GTG%20%C2%B7%20IOActive-cc0000?style=for-the-badge" alt="Red Team Leader · GTG · IOActive"></a>
-  <a href="https://github.com/Maldev-Academy"><img src="https://img.shields.io/badge/-Maldev%20Academy-cc0000?style=for-the-badge&logo=hackthebox&logoColor=white" alt="Maldev Academy"></a>
+  <a href="https://github.com/Maldev-Academy"><img src="https://img.shields.io/badge/-Security%20Researcher%20%26%20Developer%20%C2%B7%20Maldev%20Academy-cc0000?style=for-the-badge&logo=hackthebox&logoColor=white" alt="Security Researcher &amp; Developer · Maldev Academy"></a>
   <a href="#publications-and-talks"><img src="https://img.shields.io/badge/-Published%20Research-4B275F?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="Publications and talks"></a>
 </p>
 
@@ -28,7 +33,7 @@
 
 ---
 
-I'm Carlos Gómez Quintana, aka `0xh3l1x`, Senior Security Consultant and Red Team Leader within IOActive's Global Threat Group (GTG). I write about what I can share at [cgomezsec.com](https://cgomezsec.com/).
+I'm Carlos Gómez Quintana, aka `0xh3l1x`, Senior Security Consultant and Red Team Leader within IOActive's Global Threat Group (GTG). I'm also a Security Researcher and Developer at [Maldev Academy](https://github.com/Maldev-Academy). I write about what I can share at [cgomezsec.com](https://cgomezsec.com/).
 
 ### IOActive / Global Threat Group
 
