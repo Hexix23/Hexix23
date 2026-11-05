@@ -1,49 +1,83 @@
 <h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=FF0000&center=true&vCenter=true&width=435&lines=0xh3l1x;Red+Team+%7C+OST+Dev;Offensive+Security+R%26D" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=FF0000&center=true&vCenter=true&width=435&lines=0xh3l1x;Red+Team+Leader;Offensive+Security+R%26D" alt="0xh3l1x | Red Team Leader | Offensive Security R&amp;D" />
 </h1>
 
 <p align="center">
-  <a href="https://cgomezsec.com/"><img src="https://img.shields.io/badge/-cgomezsec.com-FF5722?style=for-the-badge&logo=firefox&logoColor=white" alt="Blog"></a>
-  <a href="https://github.com/Maldev-Academy"><img src="https://img.shields.io/badge/-Maldev%20Academy-cc0000?style=for-the-badge&logo=hackthebox&logoColor=white" alt="Maldev Academy"></a>
-  <a href="https://www.ioactive.com/authentication-downgrade-attacks-deep-dive-into-mfa-bypass/"><img src="https://img.shields.io/badge/-Published%20Research-4B275F?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="Research"></a>
+  <strong>Senior Security Consultant &amp; Red Team Leader</strong><br>
+  Global Threat Group (GTG) · IOActive
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/-C/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" />
-  <img src="https://img.shields.io/badge/-C%23/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
-  <img src="https://img.shields.io/badge/-Rust-000000?style=flat-square&logo=rust&logoColor=white" />
-  <img src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white" />
-  <img src="https://img.shields.io/badge/-x86/x64%20ASM-6E4C13?style=flat-square&logo=assemblyscript&logoColor=white" />
-  <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/-PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white" />
-  <img src="https://img.shields.io/badge/-Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white" />
+  <a href="https://cgomezsec.com/"><img src="https://img.shields.io/badge/-cgomezsec.com-FF5722?style=for-the-badge&logo=firefox&logoColor=white" alt="Blog"></a>
+  <a href="https://www.ioactive.com/"><img src="https://img.shields.io/badge/-Red%20Team%20Leader%20%C2%B7%20GTG%20%C2%B7%20IOActive-cc0000?style=for-the-badge" alt="Red Team Leader · GTG · IOActive"></a>
+  <a href="https://github.com/Maldev-Academy"><img src="https://img.shields.io/badge/-Maldev%20Academy-cc0000?style=for-the-badge&logo=hackthebox&logoColor=white" alt="Maldev Academy"></a>
+  <a href="#publications-and-talks"><img src="https://img.shields.io/badge/-Published%20Research-4B275F?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="Publications and talks"></a>
 </p>
 
 ---
 
-Red team operator and offensive tool developer. Most of my work lives under [@Maldev-Academy](https://github.com/Maldev-Academy) and in private repositories for my current employer (IOActive). I write about what I can share at [cgomezsec.com](https://cgomezsec.com/).
+I'm Carlos Gómez Quintana, aka `0xh3l1x`, Senior Security Consultant and Red Team Leader within IOActive's Global Threat Group (GTG). I write about what I can share at [cgomezsec.com](https://cgomezsec.com/).
 
-Author of [Authentication Downgrade Attacks: Deep Dive Into MFA Bypass](https://www.ioactive.com/authentication-downgrade-attacks-deep-dive-into-mfa-bypass/).
+### IOActive / Global Threat Group
+
+I lead the team's technical work and develop the tools we use on engagements. I also work on the team's structure and technical workflows.
+
+- **Offensive development:** implants in C/C++ and C#/.NET, DLL sideloading, signed binary abuse, BOFs, custom UDRLs, payload staging, and testing against production EDR products.
+- **Identity security:** Active Directory and Microsoft Entra ID attack paths, privilege escalation, lateral movement, token manipulation, conditional access bypasses, and cross-tenant scenarios.
 
 ---
 
-### What I'm working on
+### Vulnerability Research
 
-AiTM phishing against hardened targets like Google using real browser instances via CDP instead of reverse proxies, sidestepping TLS fingerprinting, BotGuard, and anti-bot systems. Also doing FIDO2/WebAuthn research, looking at where passkey implementations break in practice.
+I use LLMs to review code, then test suspected bugs against real builds. My [IOActive article](https://www.ioactive.com/llm-assisted-vulnerability-research-finding-real-bugs-with-code-reasoning-models/) follows that process through two Angular findings and their fixes, from threat modeling to checking the patched versions.
+
+| CVE | Product | Vulnerability | Contribution |
+|---|---|---|---|
+| [CVE-2026-68945](https://github.com/advisories/GHSA-jhpw-976m-542j) | Angular | Different request parameters could produce the same `HttpTransferCache` key, causing the wrong cached response to be reused. | Research and patch development. |
+| [CVE-2026-69151](https://github.com/advisories/GHSA-jj27-h5hq-8x99) | Angular | A translation file could inject JavaScript through event-handler attributes marked for i18n. | Research and patch development. |
+| [CVE-2026-105803](https://github.com/git-lfs/git-lfs/releases/tag/v3.8.1) | Git LFS | A malicious repository's `.lfsconfig` could make Git LFS run an arbitrary program as a custom transfer adapter. | Additional responsible reporter, acknowledged in the release notes. |
 
 ---
 
-### [`Maldev Academy`](https://github.com/Maldev-Academy)
+### Publications and Talks
 
-Modules on phishing, auth attacks, and cloud identity exploitation. Protocol internals, working implementations, OPSEC. All MFA bypass modules include FIDO downgrade vectors.
+#### Publications
 
-<table>
-<tr>
-<td>
+| Year | Research | Publisher |
+|---|---|---|
+| 2026 | [LLM-Assisted Vulnerability Research: Finding Real Bugs with Code-Reasoning Models](https://www.ioactive.com/llm-assisted-vulnerability-research-finding-real-bugs-with-code-reasoning-models/) | IOActive |
+| 2026 | [Authentication Downgrade Attacks: Deep Dive into MFA Bypass](https://www.ioactive.com/authentication-downgrade-attacks-deep-dive-into-mfa-bypass/) | IOActive |
+
+#### Talks
+
+| Year | Talk | Event |
+|---|---|---|
+| 2025 | [Cloud Edge Phishing: Breaking the Future of Auth](https://www.ioactive.com/event/out-of-the-box-carlos-gomez-quintana-cloud-edge-phishing-bangkok-thailand/) | Out of the Box, Bangkok |
+| 2023 | [Upgrading Rollback-Agnostic Replay Attacks](https://conference.hitb.org/hitbsecconf2023ams/materials/D1%20COMMSEC%20-%20Upgrading%20Rollback%20Agnostic%20Replay%20Attacks%20-%20Carlos%20Gomez.pdf) | Hack In The Box, Amsterdam |
+
+---
+
+### Open Source Tools
+
+| Tool | Purpose |
+|---|---|
+| [GitHubDeviceCodePhishing](https://github.com/Maldev-Academy/GitHubDeviceCodePhishing) | GitHub OAuth device code phishing. Minimal setup. |
+| [GitLabDeviceCodePhishing](https://github.com/Maldev-Academy/GitLabDeviceCodePhishing) | Device code phishing for GitLab cloud and self-managed instances. |
+| [shodan-mcp](https://github.com/Hexix23/shodan-mcp) | Shodan MCP server. Query Shodan from AI assistants. |
+
+---
+
+### Maldev Academy
+
+I write modules and build companion tooling for [Maldev Academy](https://github.com/Maldev-Academy) on phishing, authentication attacks, and cloud identity exploitation. Protocol internals, working implementations, OPSEC. Topics include MFA downgrade paths where weaker fallback methods remain available.
+
+<details>
+<summary>Training modules and companion tooling</summary>
+
+#### Training modules
 
 | # | Module | Target | Technique |
-|---|--------|--------|-----------|
+|---|---|---|---|
 | 01 | Microsoft Device Code Phishing | M365 | OAuth 2.0 device code flow abuse |
 | 02 | GitHub Device Code Phishing | GitHub | Device code phishing against GitHub OAuth |
 | 03 | Illicit Consent Grant Attack | M365 | OAuth consent phishing for persistent access |
@@ -55,173 +89,47 @@ Modules on phishing, auth attacks, and cloud identity exploitation. Protocol int
 | 09 | Client Analysis Via Cloudflare Workers | — | Anti-bot, anti-analysis, client fingerprinting |
 | 10 | Dynamic Device Code Phishing | Microsoft | Flask app for runtime device code generation |
 | 11 | MFA Bypass Via Azure AiTM | Azure AD | AiTM via Azure Functions + Azure Front Door |
-| 12 | Google Phishing: BotGuard, Browser Automation, Chrome Sync | Google | BotGuard internals + custom bypass tool to defeat Google MFA |
-| 13 | Phishing Passkeys | FIDO2/WebAuthn | Synced passkeys + hardware security keys, custom Passkey Phisher |
+| 12 | Google Phishing: BotGuard, Browser Automation, Chrome Sync | Google | BotGuard analysis, CDP browser automation, and Chrome Sync research |
+| 13 | Phishing Passkeys | FIDO2/WebAuthn | Synced passkeys and hardware-key authentication flows, downgrade paths, and session capture |
 | 14 | ConsentFix Attack | M365 / OAuth | ConsentFix attack chain with custom tooling for engagements |
 
-</td>
-</tr>
-</table>
+#### Companion tooling
+
+These private tools come with the Maldev Academy modules and are available to members.
+
+| Tool | Focus |
+|---|---|
+| Real-time Phishing Framework | Credential relay with live feedback. Real Chrome per target via nodriver/CDP; Google, GitHub, and Bitwarden support. |
+| Cloudflare Workers AiTM Proxy | Serverless reverse proxy for request/response rewriting and credential/session capture. |
+| Azure AiTM Proxy | AiTM proxy on Azure Functions and Azure Front Door. |
+| Evilginx M365 Phishlet | MFA downgrade paths where weaker authentication methods remain enabled. |
+| Google MFA Bypass Framework | BotGuard analysis, browser-driven authentication via nodriver/CDP, and Chrome Sync research. |
+| Passkey Phisher | Synced passkeys and hardware-key authentication flows, CDP virtual authenticators, downgrade paths, and session capture. |
+| ConsentFix Tool | OAuth consent abuse with the ConsentFix lure flow, packaged for engagements. |
+| Client Fingerprinting Worker | Client profiling on Cloudflare Workers: anti-bot checks, sandbox detection, browser fingerprinting, and geo filtering. |
+
+</details>
 
 ---
 
-### Tools
+### Current Research
 
-#### Open Source
+I'm researching browser-based AiTM phishing through CDP, including BotGuard behavior and Chrome Sync. My FIDO2/WebAuthn work looks at downgrade paths and session handling in real implementations.
 
-<table>
-<tr>
-<td width="33%">
-
-<p align="center"><b><a href="https://github.com/Maldev-Academy/GitHubDeviceCodePhishing">GitHubDeviceCodePhishing</a></b></p>
-<p align="center"><img src="https://img.shields.io/github/stars/Maldev-Academy/GitHubDeviceCodePhishing?style=flat-square&color=ff0000&labelColor=0d1117" /> <img src="https://img.shields.io/github/forks/Maldev-Academy/GitHubDeviceCodePhishing?style=flat-square&color=444444&labelColor=0d1117" /></p>
-
-GitHub device code phishing. Minimal setup.
-
-</td>
-<td width="33%">
-
-<p align="center"><b><a href="https://github.com/Maldev-Academy/GitLabDeviceCodePhishing">GitLabDeviceCodePhishing</a></b></p>
-<p align="center"><img src="https://img.shields.io/github/stars/Maldev-Academy/GitLabDeviceCodePhishing?style=flat-square&color=ff0000&labelColor=0d1117" /> <img src="https://img.shields.io/github/forks/Maldev-Academy/GitLabDeviceCodePhishing?style=flat-square&color=444444&labelColor=0d1117" /></p>
-
-Same approach for GitLab. Cloud and self-managed.
-
-</td>
-<td width="33%">
-
-<p align="center"><b><a href="https://github.com/Hexix23/shodan-mcp">shodan-mcp</a></b></p>
-<p align="center"><img src="https://img.shields.io/github/stars/Hexix23/shodan-mcp?style=flat-square&color=ff0000&labelColor=0d1117" /> <img src="https://img.shields.io/github/forks/Hexix23/shodan-mcp?style=flat-square&color=444444&labelColor=0d1117" /></p>
-
-Shodan MCP server. Query Shodan from AI assistants.
-
-</td>
-</tr>
-</table>
-
-#### Internal Tooling — Maldev Academy
-
-<p align="center">
-  <a href="https://github.com/Maldev-Academy"><img src="https://img.shields.io/badge/-Maldev%20Academy-cc0000?style=for-the-badge&logo=hackthebox&logoColor=white" /></a>
-  <img src="https://img.shields.io/badge/-Members%20Only-0d1117?style=for-the-badge&labelColor=0d1117" />
-  <img src="https://img.shields.io/badge/-Private-444444?style=for-the-badge" />
-</p>
-
-<p align="center"><i>Private frameworks shipped alongside the corresponding research modules.</i></p>
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-<p align="center"><b>Real-time Phishing Framework</b></p>
-<p align="center"><img src="https://img.shields.io/badge/-AiTM-cc0000?style=flat-square" /> <img src="https://img.shields.io/badge/-CDP-4285F4?style=flat-square&logo=googlechrome&logoColor=white" /> <img src="https://img.shields.io/badge/-Multi--provider-444444?style=flat-square" /></p>
-
-Multi-provider credential relay with live error feedback. Real Chrome per target via nodriver/CDP. Google, GitHub, Bitwarden built in.
-
-</td>
-<td width="50%" valign="top">
-
-<p align="center"><b>Cloudflare Workers AiTM Proxy</b></p>
-<p align="center"><img src="https://img.shields.io/badge/-AiTM-cc0000?style=flat-square" /> <img src="https://img.shields.io/badge/-Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white" /> <img src="https://img.shields.io/badge/-Serverless-444444?style=flat-square" /></p>
-
-Invisible reverse proxy on CF Workers. Rewrites requests/responses on the edge, captures credentials and session tokens. No servers.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-<p align="center"><b>Azure AiTM Proxy</b></p>
-<p align="center"><img src="https://img.shields.io/badge/-AiTM-cc0000?style=flat-square" /> <img src="https://img.shields.io/badge/-Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" /> <img src="https://img.shields.io/badge/-Front%20Door-444444?style=flat-square" /></p>
-
-AiTM proxy on Azure Functions + Front Door. Legitimate Microsoft infrastructure proxying auth flows.
-
-</td>
-<td width="50%" valign="top">
-
-<p align="center"><b>Evilginx M365 Phishlet</b></p>
-<p align="center"><img src="https://img.shields.io/badge/-Phishlet-cc0000?style=flat-square" /> <img src="https://img.shields.io/badge/-M365-0078D4?style=flat-square&logo=microsoft&logoColor=white" /> <img src="https://img.shields.io/badge/-MFA%20Downgrade-444444?style=flat-square" /></p>
-
-Custom phishlet with MFA downgrade. Forces FIDO-capable accounts to weaker auth methods.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-<p align="center"><b>Google MFA Bypass Framework</b></p>
-<p align="center"><img src="https://img.shields.io/badge/-Module%2012-cc0000?style=flat-square" /> <img src="https://img.shields.io/badge/-Google-4285F4?style=flat-square&logo=google&logoColor=white" /> <img src="https://img.shields.io/badge/-BotGuard-444444?style=flat-square" /></p>
-
-BotGuard internals reversing + custom bypass. Real Chrome via nodriver/CDP, Chrome Sync abuse for credential and session theft. Defeats Google MFA end-to-end.
-
-</td>
-<td width="50%" valign="top">
-
-<p align="center"><b>Passkey Phisher</b></p>
-<p align="center"><img src="https://img.shields.io/badge/-Module%2013-cc0000?style=flat-square" /> <img src="https://img.shields.io/badge/-FIDO2-0d1117?style=flat-square&logo=fidoalliance&logoColor=white" /> <img src="https://img.shields.io/badge/-WebAuthn-444444?style=flat-square" /></p>
-
-Targets synced passkeys and hardware security keys. CDP virtual authenticators, downgrade paths, session capture.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-<p align="center"><b>ConsentFix Tool</b></p>
-<p align="center"><img src="https://img.shields.io/badge/-Module%2014-cc0000?style=flat-square" /> <img src="https://img.shields.io/badge/-OAuth-EB5424?style=flat-square&logo=oauth&logoColor=white" /> <img src="https://img.shields.io/badge/-M365-0078D4?style=flat-square&logo=microsoft&logoColor=white" /></p>
-
-End-to-end ConsentFix attack chain packaged for engagements. OAuth consent abuse with the ConsentFix lure flow.
-
-</td>
-<td width="50%" valign="top">
-
-<p align="center"><b>Client Fingerprinting Worker</b></p>
-<p align="center"><img src="https://img.shields.io/badge/-Anti--bot-cc0000?style=flat-square" /> <img src="https://img.shields.io/badge/-Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white" /> <img src="https://img.shields.io/badge/-Recon-444444?style=flat-square" /></p>
-
-CF Worker that profiles clients before serving content. Anti-bot, sandbox detection, browser fingerprinting, geo filtering.
-
-</td>
-</tr>
-</table>
-
----
-
-### Internal R&D
-
-Things I work on that aren't public.
-
-<table>
-<tr>
-<td width="33%" align="center">
-<img src="https://img.shields.io/badge/-EDR%20Evasion-cc0000?style=for-the-badge&logoColor=white" /><br><br>
-Implant dev in C/C++ and C#/.NET. DLL sideloading, signed binary abuse, BoF development, UDRL custom loader, payload staging. Tested against production EDR.
-</td>
-<td width="33%" align="center">
-<img src="https://img.shields.io/badge/-AD%20/%20Azure%20AD-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" /><br><br>
-Attack paths, privesc, lateral movement. Azure AD token manipulation, conditional access bypass, cross-tenant abuse. Internal engagement tooling.
-</td>
-<td width="33%" align="center">
-<img src="https://img.shields.io/badge/-APT--992-4B275F?style=for-the-badge&logoColor=white" /><br><br>
-Training specialist models for offensive security. RL pipeline with feedback from live security products instead of static datasets.
-</td>
-</tr>
-</table>
+For `APT-992`, I'm training specialist models for offensive security. The RL pipeline uses feedback from live security products.
 
 ---
 
 ### Stack
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=c,cpp,cs,dotnet,rust,python,go,js,bash&theme=dark&perline=9" alt="Languages" />
-</p>
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=docker,azure,cloudflare,nginx,linux,github&theme=dark&perline=6" alt="Infra" />
-</p>
+**Languages:** C/C++, C#/.NET, Rust, Python, Go, x86/x64 assembly, JavaScript, PowerShell, Bash.
 
+**Infrastructure:** Docker, Azure, Cloudflare, Nginx, Linux, GitHub.
 
 ---
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=ff0000&height=80&section=footer" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=ff0000&height=80&section=footer" width="100%" alt="" />
 </p>
 
 <p align="center"><code>0xh3l1x</code></p>
